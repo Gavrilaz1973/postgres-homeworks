@@ -9,7 +9,7 @@ with open('/home/gavrilaz/PycharmProjects/postgres-homeworks/homework-1/north_da
     for row in reader:
         rows.append([row['order_id'], row['customer_id'], row['employee_id'], row['order_date'], row['ship_city']])
 
-conn = psycopg2.connect(host="localhost", database="north", user="postgres", password="Podoseniha2012!")
+conn = psycopg2.connect(host="localhost", database="north", user="postgres", password="1973")
 
 try:
     with conn:
