@@ -6,7 +6,7 @@ import psycopg2
 password = str(os.getenv('PASSWORD_PGADMIN'))
 
 rows_customers = []
-with open('/home/gavrilaz/PycharmProjects/postgres-homeworks/homework-1/north_data/customers_data.csv', 'r',
+with open('north_data/customers_data.csv', 'r',
           encoding='windows-1251') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -23,7 +23,7 @@ finally:
     conn.close()
 
 rows_employees = []
-with open('/home/gavrilaz/PycharmProjects/postgres-homeworks/homework-1/north_data/employees_data.csv', 'r',
+with open('north_data/employees_data.csv', 'r',
           encoding='windows-1251') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -41,7 +41,7 @@ finally:
 
 
 rows = []
-with open('/home/gavrilaz/PycharmProjects/postgres-homeworks/homework-1/north_data/orders_data.csv', 'r',
+with open('north_data/orders_data.csv', 'r',
           encoding='windows-1251') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
